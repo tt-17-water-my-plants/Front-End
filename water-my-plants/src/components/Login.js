@@ -1,8 +1,12 @@
 import React, {useState} from 'react'
 
+const initialUser = {
+    username: '',
+    password: '',
+}
 
 function Login () {
-    const {user, setUser} = useState('')
+    const {user, setUser} = useState(initialUser)
     
     
     const onSubmit = evt => {
@@ -11,7 +15,7 @@ function Login () {
     }
     const onChange = evt => {
         const {name, value} = evt.target
-        setUser(name, value)
+        setUser( ...user,[name]: value)
     }
     
     
@@ -23,7 +27,7 @@ function Login () {
             <h2>Sign In</h2>
             <label>Username
                 <input
-                value={}
+                value={user.username}
                 onChange={onChange}
                 name='username'
                 type='text'
@@ -31,7 +35,7 @@ function Login () {
             </label>
             <label>Password
                 <input
-                value={}
+                value={user.password}
                 onChange={onChange}
                 name='password'
                 type='text'
