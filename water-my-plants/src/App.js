@@ -15,7 +15,6 @@ function App() {
         <Route path="/" component={Home} />
       </Switch>
     </div>
->>>>>>> 1841ebb6640e3b31c5a901d657c87b16828ba8e5
   );
 }
 
