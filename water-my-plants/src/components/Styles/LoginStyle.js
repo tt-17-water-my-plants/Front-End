@@ -22,7 +22,7 @@ export const Form = styled.form`
 
   input {
     border-radius: 20px;
-    height: 250px;
+    height: 50px;
     width: 250px;
     margin: 0;
   }
